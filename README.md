@@ -1,2 +1,2 @@
 # Algorithms-and-complexity
-assingment submission
+assignment submission
