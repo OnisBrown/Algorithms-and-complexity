@@ -1,0 +1,46 @@
+ //while (true)
+              //{
+                while (Convert.ToInt32(table[left,column]) < pivot)
+				{
+					left++;
+				}
+                    
+ 
+                while (Convert.ToInt32(table[right,column]) > pivot)
+				{
+					right--;
+				}
+                    
+ 
+                if (left < right)
+                {
+                    
+					temp[0] = table[left,0];
+					temp[1] = table[left,1];
+					temp[2] = table[left,2];
+					temp[3] = table[left,3];
+					temp[4] = table[left,4];
+					temp[5] = table[left,5];
+					temp[6] = table[left,6];
+					table[left,0] = table[right,0];
+					table[left,1] = table[right,1];
+					table[left,2] = table[right,2];
+					table[left,3] = table[right,3];
+					table[left,4] = table[right,4];
+					table[left,5] = table[right,5];
+					table[left,6] = table[right,6];
+					table[right,0] = temp[0];
+					table[right,1] = temp[1];
+					table[right,2] = temp[2];
+					table[right,3] = temp[3];
+					table[right,4] = temp[4];
+					table[right,5] = temp[5];
+					table[right,6] = temp[6];
+					return(left);
+                }
+				
+                else
+                {
+					return (right);
+                }
+              //}
