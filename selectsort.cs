@@ -374,7 +374,7 @@ class sort
 	{
 		Console.WriteLine("what do you want your results sorted by?(Date, TMax, TMin, AF, Rain or Sun)");
 		string sval = Console.ReadLine();
-		Console.WriteLine("sorted by ascending or descending order?");
+		Console.WriteLine("sorted by ascending or descending order? (asc or des)");
 		string order = Console.ReadLine();
 		int column;
 		Stopwatch sw = new Stopwatch();//stopwatch for sorts
